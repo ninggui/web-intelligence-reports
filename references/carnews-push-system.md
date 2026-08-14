@@ -1,6 +1,6 @@
 # 新能源汽车早报推送系统 — 完整参考
 
-> 实施日期：2026-08-08 | 容器：ai-carnews:2.0
+> 实施日期：2026-08-08 | 容器：service:2.0
 
 ## 系统架构
 
@@ -103,12 +103,12 @@ API：`https://qianfan.baidubce.com/v2/ai_search/chat/completions`
 
 ```bash
 # 部署代码
-docker cp config.json ai-carnews:/app/config.json
-docker cp processor_ai.py ai-carnews:/app/processor_ai.py
+docker cp config.json service:/app/config.json
+docker cp processor_ai.py service:/app/processor_ai.py
 
 # 后台运行（长任务）
-docker exec ai-carnews python3 /app/processor_ai.py &
+docker exec service python3 /app/processor_ai.py &
 
 # 查看日志
-docker exec ai-carnews tail -f /app/logs/app_main.log
+docker exec service tail -f /app/logs/app_main.log
 ```
