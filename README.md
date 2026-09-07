@@ -1,55 +1,45 @@
-# web-intelligence-reports
+# Web 情报报告
 
-Web 情报报告生成：用 web 搜索搜集情报 → 验证 → 生成结构化报告 → 发布文档。适用于舆情监控、品牌分析、行业报告、竞品调研。
+![GitHub stars](https://img.shields.io/github/stars/ninggui/web-intelligence-reports)
+![License](https://img.shields.io/github/license/ninggui/web-intelligence-reports)
+[![SkillHub](https://img.shields.io/badge/SkillHub-在线安装-blue)](https://skillhub.cn/skills/web-intelligence-reports)
+
+用 web_search 搜集情报→验证→生成结构化报告→发布飞书文档。
 
 ## 这是什么
 
-一个可复用的 AI Agent 技能（Skill），来自真实业务场景沉淀。用于需要系统性搜集网络情报并产出结构化报告的场景。
+一个可复用的 AI Agent 技能（Skill），来自真实业务场景沉淀，含完整执行流程、避坑清单与验证步骤。
 
-## 解决的问题
+## 快速使用
 
-- 搜索了一堆资料，不知道怎么组织成报告
-- 情报真假难辨，需要验证
-- 报告格式不统一，每次从头设计
+将本仓库放入 Agent 技能目录后，用对应触发词调用（见 SKILL.md），Agent 会自动加载并执行完整流程。
 
-## 核心流程
+## 核心能力
 
-1. **搜集**——web 搜索多角度搜集（主力引擎 + 兜底引擎）
-2. **验证**——交叉验证信息源，区分事实与观点
-3. **结构化**——按固定模板组织（结论→依据→风险）
-4. **发布**——生成报告文档，可发布到协作平台（如飞书）
-
-## 适用场景
-
-| 场景 | 说明 |
+| 能力 | 说明 |
 |------|------|
-| 舆情监控 | 品牌/产品在网络上的提及与评价 |
-| 品牌分析 | 竞品/目标品牌的公开信息全景 |
-| 行业报告 | 特定行业的趋势、政策、玩家 |
-| 竞品调研 | 竞品动态、定价、营销动作 |
+| 多源搜索 |
+| 信息验证去重 |
+| 结构化报告生成 |
+| 飞书文档发布 |
 
-## 使用方式
+## 使用方式（安装）
 
-将本仓库内容放入你的 Agent 技能目录：
+- **Hermes**: 放入 `skills/` 目录
+- **Claude**: 放入 `~/.claude/skills/`
+- **其他 Agent**: 按对应 SKILL.md 格式放入技能目录
+- **SkillHub 一键安装**: https://skillhub.cn/skills/web-intelligence-reports
 
-- **Hermes**: `skills/` 目录
-- **Claude**: `~/.claude/skills/`
-- **其他 Agent**: 按对应 SKILL.md 格式
+## 优势
 
-Agent 会在匹配触发条件时自动加载并使用。
-
-## 报告结构模板
-
-```
-## 结论（一句话）
-### 依据（表格：维度→结论）
-### 边界与风险（条件/风险清单）
-```
+- 情报-报告-发布全自动
+- 适用于舆情/竞品/行业监控
+- 来源可追溯
 
 ## 内容结构
 
 - `SKILL.md` — 核心技能定义（触发条件、执行流程、避坑清单）
-- `references/` — 可选参考文件（完整案例）
+- `references/` — 可选参考文件
 
 ## 许可
 
