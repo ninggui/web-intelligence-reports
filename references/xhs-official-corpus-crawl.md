@@ -1,7 +1,7 @@
 # 小红书品牌官方号语料抓取 SOP（2026-08-13 实测验证）
 
 > 用途：抓取品牌官方小红书号的笔记标题+正文，作为品牌语言风格研究/品牌深度研究的语料来源。
-> 环境：xiaohongshu-mcp 容器（18060），MCP 调用经 docker exec curl 转发。
+> 环境：xhs-mcp 容器（<port>），MCP 调用经 docker exec curl 转发。
 > 案例：蔚来官方号 62条笔记全量 + 7篇全文（skill nio-brand-voice v2.2 落地）
 
 ## 为什么需要（背景）
