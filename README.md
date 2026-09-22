@@ -1,5 +1,8 @@
 <div align="center">
 
+
+![cover](assets/cover.png)
+
 # web-intelligence-reports
 
 **多维度搜索→验证→结构化报告→飞书发布：品牌/竞品/舆情监控标准流程。**
